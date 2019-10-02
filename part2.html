@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Joe's Hotdog Stand</title>
+    <style>
+        * {
+            font-family: "Helvetica", sans-serif;
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+            padding: 20px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        form {
+            padding: 20px;
+            text-align: center;
+            line-height: 2;
+        }
+
+        form button {
+            width: 50px;
+            height: 30px;
+            margin: 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Joe's Hotdog Stand - Start Your Order!</h1>
+    <h2>Menu</h2>
+    <p>Hotdog -- $3.25</p>
+    <p>French Fries -- $2.00</p>
+    <p>Drinks -- $1.50</p>
+    <form>
+        I want
+        <input id="hotDog" type="text" name="hotDog" placeholder="0" onfocus="this.placeholder=''"
+            onblur="this.placeholder='0'">
+        hot dogs
+        <br>
+        I want
+        <input id="fries" type="text" name="fries" placeholder="0" onfocus="this.placeholder=''"
+            onblur="this.placeholder='0'">
+        French fries
+        <br>
+        I want
+        <input id="drink" type="text" name="drink" placeholder="0" onfocus="this.placeholder=''"
+            onblur="this.placeholder='0'">
+        drinks
+        <br>
+        <button id="btn">
+            Order!
+        </button>
+    </form>
+    <script src="part2.js"></script>
+</body>
+
+</html>

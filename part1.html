@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lucky for Life</title>
+    <style>
+        * {
+            margin: 10px;
+            padding: 10px;
+        }
+
+        #lottery,
+        #lucky {
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="init.js"></script>
+    <form>
+        <input id="lottery" type="text" name="lottery" placeholder="Enter 5 numbers from 1 to 48"
+            onfocus="this.placeholder=''" onblur="this.placeholder='Enter 5 numbers from 1 to 48'">
+        <br>
+        <input id="lucky" type="text" name="lucky" placeholder="Enter a lucky ball number from 1 to 18"
+            onfocus="this.placeholder=''" onblur="this.placeholder='Enter a lucky ball number from 1 to 18'">
+        <br>
+        <button id="btn">
+            Submit
+        </button>
+    </form>
+    <p id="result">result</p>
+    <script src="calc.js"></script>
+</body>
+
+</html>
